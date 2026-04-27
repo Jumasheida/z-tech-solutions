@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-TECH TECHNOLOGY SOLUTIONS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+    <nav class="glass-nav">
+        <div class="logo">Z-TECH</div>
+        <ul class="nav-links"></ul>
+        <li onclick="showPage('home')">Home</li>
+        <li class="dropdown">
+                <span class="dropbtn" onclick="showPage('products')">Shop ▾</span>
+                <div class="dropdown-content">
+                    <a href="#" onclick="filterByCategory('Laptop')">Laptops</a>
+                    <a href="#" onclick="filterByCategory('Accessory')">Accessories</a>
+                </div>
+            </li>
+            <li onclick="showPage('cart')">Cart (<span id="cart-count">0</span>)</li>
+            <li onclick="showPage('contact')">Contact</li>
+        </ul>
+        <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+    </nav>
+
+    <main id="main-content"></main>
+
+    <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col brand-info">
+            <h2>Z-TECH</h2>
+            <p>Z-Tech Technology Solutions — your premier destination for cutting-edge laptops, accessories, and tech solutions. Built for those who demand excellence.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Products</h3>
+            <ul>
+                <li onclick="filterByCategory('Laptop')">Laptops</li>
+                <li>Gaming Gear</li>
+                <li>Monitors</li>
+                <li onclick="filterByCategory('Accessory')">Accessories</li>
+                <li>Refurbished</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Blog</li>
+                <li>Partners</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Support</h3>
+            <ul>
+                <li onclick="showPage('contact')">Contact Us</li>
+                <li>FAQ</li>
+                <li>Warranty</li>
+                <li>Returns</li>
+                <li>Track Order</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Z-Tech Technology Solutions. All Rights Reserved.</p>
+    </div>
+</footer>
+
+   
+
+    <script src="script.js"></script>
+    </nav>
+    
+</body>
+</html>
